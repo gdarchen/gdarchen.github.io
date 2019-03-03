@@ -1,0 +1,24 @@
+{
+  "name": "gdarchen-personal-website",
+  "homepage": "https://gdarchen.github.io",
+  "authors": [
+    "Gautier Darchen"
+  ],
+  "description": "Gautier Darchen's personal website",
+  "main": "dist/index.js",
+  "keywords": [
+    "material",
+    "design",
+    "material-ui",
+    "google",
+    "twitter"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}
