@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react components for routing our app without refresh
@@ -48,7 +49,9 @@ class HomePage extends React.Component {
                 <div className={classes.brand}>
                   <h1 className={classes.title}>Gautier Darchen</h1>
                   <h3 className={classes.subtitle}>
-                    Full stack web engineer at <a href="https://takima.fr">Takima</a>, specialized in React, Node.js and Spring technologies.
+                    Full stack web engineer at{" "}
+                    <a href="https://takima.fr">Takima</a>, specialized in
+                    React, Node.js and Spring technologies.
                   </h3>
                 </div>
               </GridItem>
@@ -68,5 +71,9 @@ class HomePage extends React.Component {
     );
   }
 }
+
+HomePage.propTypes = {
+  classes: PropTypes.object.isRequired
+};
 
 export default withStyles(homePageStyle)(HomePage);
