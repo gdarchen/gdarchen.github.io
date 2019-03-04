@@ -76,7 +76,7 @@ class Experiences extends React.Component {
 								>
 									<h3 className="vertical-timeline-element-title">Engineering internship - "Takima Academy" training</h3>
 									<h4 className="vertical-timeline-element-subtitle">Takima, Paris, France</h4>
-									<p className={classes.experienceContent}>
+									<div className={classes.experienceContent}>
 										Project training in the following areas:
 										<ul>
 											<li>back-end development</li>
@@ -84,7 +84,7 @@ class Experiences extends React.Component {
 											<li>Devops activities</li>
 											<li>working methodologies</li>
 										</ul>
-									</p>
+									</div>
 									<p className={classes.technologies}>
 										<Badge>Java</Badge>
 										<Badge>Spring/SpringBoot</Badge>

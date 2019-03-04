@@ -22,6 +22,7 @@ import Contact from "./Sections/Contact.jsx";
 import homePageStyle from "./Styles/homePage.jsx";
 import Experiences from "./Sections/Experiences.jsx";
 import Languages from "./Sections/Languages.jsx";
+import Projects from "./Sections/Projects.jsx";
 
 class HomePage extends React.Component {
   render() {
@@ -60,6 +61,7 @@ class HomePage extends React.Component {
           <Contact />
           <Experiences />
           <Languages />
+          <Projects />
         </div>
         <Footer />
       </div>
