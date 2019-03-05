@@ -3,7 +3,8 @@ import { container } from "assets/jss/material-kit-react.jsx";
 const experiencesStyle = {
   container,
   sectionTitleCentered: {
-    textAlign: "center"
+    textAlign: "center",
+    marginTop: "20px!important"
   },
   timelineZone: {
     backgroundColor: "rgb(227, 227, 227)",

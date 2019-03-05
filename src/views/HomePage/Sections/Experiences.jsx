@@ -6,8 +6,6 @@ import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
-import Work from "@material-ui/icons/Work";
-import School from "@material-ui/icons/School";
 import Stars from "@material-ui/icons/Stars";
 import LocationOn from "@material-ui/icons/LocationOn";
 

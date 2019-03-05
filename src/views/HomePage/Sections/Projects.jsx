@@ -258,6 +258,15 @@ class Projects extends React.Component {
                       {project.location}
                     </h4>
 
+                    {project.contents.map((content, key) => (
+                      <p
+                        className={classes.projectsContent}
+                        key={`project-${project}-content-${key}`}
+                      >
+                        {content}
+                      </p>
+                    ))}
+
                     {project.github && (
                       <div className={classes.githubButton}>
                         <Button
@@ -271,15 +280,6 @@ class Projects extends React.Component {
                         </Button>
                       </div>
                     )}
-
-                    {project.contents.map((content, key) => (
-                      <p
-                        className={classes.projectsContent}
-                        key={`project-${project}-content-${key}`}
-                      >
-                        {content}
-                      </p>
-                    ))}
 
                     {project.technologies && (
                       <p className={classes.technologies}>
