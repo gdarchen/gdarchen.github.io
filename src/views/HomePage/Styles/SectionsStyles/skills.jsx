@@ -1,9 +1,10 @@
 import { container } from "assets/jss/material-kit-react.jsx";
 
-const languagesStyle = {
+const skillsStyle = {
   container,
   sectionTitleCentered: {
-    textAlign: "center"
+    textAlign: "center",
+    marginTop: "30px!important"
   },
   title: {
     color: "#3C4858",
@@ -23,15 +24,37 @@ const languagesStyle = {
   },
   cardHeader: {
     textAlign: "center",
-    fontVariant: "small-caps",
     fontWeight: "bold"
   },
   cardBody: {
     textAlign: "center"
   },
-  languageCard: {
-    width: "unset"
+  skillCategoryCard: {
+    width: "unset",
+    marginBottom: "20px"
+  },
+  skillGroup: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    flexWrap: "wrap"
+  },
+  skill: {
+    marginLeft: "5px",
+    marginRight: "5px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    "& svg": {
+      fontSize: "2em"
+    },
+    "&:hover": {
+      "& svg": {
+        fontSize: "3em"
+      }
+    }
   }
 };
 
-export default languagesStyle;
+export default skillsStyle;
