@@ -15,6 +15,17 @@ import DialogContent from "@material-ui/core/DialogContent";
 import Work from "@material-ui/icons/Work";
 import Close from "@material-ui/icons/Close";
 import LocationOn from "@material-ui/icons/LocationOn";
+import Stars from "@material-ui/icons/Stars";
+
+import {
+  FaFileInvoice,
+  FaAppStoreIos,
+  FaUserShield,
+  FaJava,
+  FaLaptopCode
+} from "react-icons/fa";
+import { TiMessages } from "react-icons/ti";
+import { GiJoystick, GiConwayLifeGlider, GiBackForth } from "react-icons/gi";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -36,6 +47,11 @@ import whatsASI3 from "assets/img/projects/WhatsASI/ir_whatsasi_filtres.png";
 import sosTouriste1 from "assets/img/projects/SOSTouriste/sosTouriste1.png";
 import sosTouriste2 from "assets/img/projects/SOSTouriste/sosTouriste2.png";
 import screenBlurrer from "assets/img/projects/ScreenBlurrer/blurrer.png";
+import elec from "assets/img/projects/PortableConsole/console1.png";
+import ASIaventure from "assets/img/projects/ASIAventure/ASIaventure.png";
+import othello from "assets/img/projects/Othello/othello.png";
+import bASIc from "assets/img/projects/bASIc/bASIc.png";
+import memory from "assets/img/projects/Memory/memory.png";
 
 const settings = {
   dots: true,
@@ -56,7 +72,8 @@ const projects = [
       "Half-time project realized at the INSA Rouen-Normandie for the company AEROW Solutions. In a team of eight students, this ISO 9001:2015 certified project aims to set up the transition from the web platform of Electronic Document Management to MVC (Model-View-Controller) by using the Symfony framework, as well as the complete redesign of the front-end architecture (thanks to the Bootstrap framework). We developped in TDD (Test Driven Development) and the working methodology is an Agile Method named Scrum.",
       "During the first 6 months, I was Project Manager."
     ],
-    technologies: ["Symfony", "Scrum", "PHP", "ELK"]
+    technologies: ["Symfony", "Scrum", "PHP", "ELK"],
+    icon: <FaFileInvoice />
   },
   /* WhatsASI? */
   {
@@ -69,7 +86,8 @@ const projects = [
     ],
     technologies: ["Java 8", "JavaFX", "AI", "RMI", "Messaging"],
     images: [whatsASI1, whatsASI2, whatsASI3],
-    github: "https://github.com/gdarchen/WhatsASI"
+    github: "https://github.com/gdarchen/WhatsASI",
+    icon: <TiMessages />
   },
   /* SOS Touriste */
   {
@@ -80,7 +98,8 @@ const projects = [
       "In Swift language (Cocoa Touch), the aim was to develop an application for iPhone, so as to offer the users a contextual help. The targeted users are tourists visiting France (location of interest points, useful telephone numbers...)."
     ],
     technologies: ["Swift", "iOS", "Mobile"],
-    images: [sosTouriste1, sosTouriste2]
+    images: [sosTouriste1, sosTouriste2],
+    icon: <FaAppStoreIos />
   },
   /* Screen blurrer */
   {
@@ -93,7 +112,73 @@ const projects = [
     ],
     technologies: ["OpenCV", "Python"],
     images: [screenBlurrer],
-    github: "https://github.com/gdarchen/screen-blurrer"
+    github: "https://github.com/gdarchen/screen-blurrer",
+    icon: <FaUserShield />
+  },
+  /* Portable game console */
+  {
+    dates: "January 2016 - May 2016",
+    title: "Portable game console",
+    location: "INSA Rouen-Normandie, Rouen, France",
+    contents: [
+      "Complete designing of a Breakout clone using an Arduino Mega driven with an analog joystick: designing the electronic circuits, choosing and buying electronic components, designing a 3D-printed housing, development of a Breakout-style game in the Arduino language."
+    ],
+    technologies: ["Arduino", "3D", "Electronics"],
+    images: [elec],
+    github: "https://github.com/gdarchen/breakout",
+    icon: <GiJoystick />
+  },
+  /* Mini adventure game */
+  {
+    dates: "October 2015 - January 2016",
+    title: "Development of mini adventure game",
+    location: "INSA Rouen-Normandie, Rouen, France",
+    contents: [
+      "In Java 8, creation of a mini terminal adventure game in a team of 2 members. The game demonstrates most of Java 8 possibilities."
+    ],
+    technologies: ["Java 8"],
+    images: [ASIaventure],
+    github: "https://github.com/gdarchen/ASIAventure",
+    icon: <FaJava />
+  },
+  /* Othello */
+  {
+    dates: "October 2015 - January 2016",
+    title: "Development of an Othello game",
+    location: "INSA Rouen-Normandie, Rouen, France",
+    contents: [
+      "In language C and using the V-Model, set up a version of the Othello game with an artificial intelligence (AI) with the Min-Max algorithm."
+    ],
+    technologies: ["C", "Min-max", "AI", "V-Model"],
+    images: [othello],
+    github: "https://github.com/gdarchen/othello",
+    icon: <GiConwayLifeGlider />
+  },
+  /* bASIc Compiler */
+  {
+    dates: "October 2015 - January 2016",
+    title: "Conception of a bASIc personal compiler",
+    location: "INSA Rouen-Normandie, Rouen, France",
+    contents: [
+      "Using Lex and Yacc, creation of a personal compiler named bASIc. It can recognise simple boolean expressions (if - then - else) and can handle inputs and outputs."
+    ],
+    technologies: ["Lex", "Yacc", "Compiler"],
+    images: [bASIc],
+    github: "https://github.com/gdarchen/bASIc-compiler",
+    icon: <FaLaptopCode />
+  },
+  /* Memory game */
+  {
+    dates: "October 2014 - January 2015",
+    title: "Conception of a Memory game",
+    location: "INSA Rouen-Normandie, Rouen, France",
+    contents: [
+      "Using Pascal and SDL, development of a Memory game. This game proposes 3 different levels, and manages a ranking."
+    ],
+    technologies: ["Lex", "Yacc", "Compiler"],
+    images: [memory],
+    github: "https://github.com/gdarchen/bASIc-compiler",
+    icon: <GiBackForth />
   }
 ];
 
@@ -140,7 +225,7 @@ class Projects extends React.Component {
                       background: "rgb(33, 150, 243)",
                       color: "#fff"
                     }}
-                    icon={<Work />}
+                    icon={project.icon ? project.icon : <Work />}
                     key={`project-${key}`}
                   >
                     <h3 className="vertical-timeline-element-title">
@@ -276,6 +361,11 @@ class Projects extends React.Component {
                     )}
                   </VerticalTimelineElement>
                 ))}
+
+                <VerticalTimelineElement
+                  iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
+                  icon={<Stars />}
+                />
               </VerticalTimeline>
             </div>
           </GridItem>
