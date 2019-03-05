@@ -9,6 +9,10 @@ const projectsStyle = {
     backgroundColor: "rgb(227, 227, 227)",
     borderRadius: "5px"
   },
+  locationIcon: {
+    position: "relative",
+    top: "5px"
+  },
   verticalTimeline: {
     "& .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date": {
       left: "145%!important",
@@ -32,7 +36,8 @@ const projectsStyle = {
     textAlign: "center"
   },
   projectsContent: {
-    textAlign: "justify"
+    textAlign: "justify",
+    fontWeight: "unset!important"
   },
   section: {
     padding: "70px 0"
@@ -42,7 +47,16 @@ const projectsStyle = {
     marginRight: "auto !important"
   },
   carousel: {
-    marginTop: "15px"
+    marginTop: "15px",
+    cursor: "pointer"
+  },
+  modalHeader: {
+    minHeight: "16.43px",
+    paddingTop: "24px",
+    paddingLeft: "24px",
+    borderBottom: "none",
+    paddingRight: "24px",
+    paddingBottom: "0"
   },
   modalCloseButton: {
     float: "right",
@@ -60,6 +74,9 @@ const projectsStyle = {
     "&:hover": {
       color: "#870404"
     }
+  },
+  githubButton: {
+    textAlign: "center"
   }
 };
 
