@@ -1,6 +1,6 @@
 import React from "react";
 // nodejs library that concatenates classes
-// import classNames from "classnames";
+import classNames from "classnames";
 // react components for routing our app without refresh
 // import { Link } from "react-router-dom";
 // @material-ui/core components
@@ -40,7 +40,10 @@ class Experiences extends React.Component {
     const { classes } = this.props;
 
     return (
-      <div className={classes.container}>
+      <div
+        className={classNames(classes.container, classes.experienceContainer)}
+        id="experiences"
+      >
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
             <h2 className={classes.sectionTitleCentered}>
@@ -75,7 +78,7 @@ class Experiences extends React.Component {
                   </p>
                   <p className={classes.experienceContent}>
                     Using Devops methodology, I was also in charge of setting up
-                    a new technological stack at the IS pole
+                    a new technological stack at the IS pole.
                   </p>
                   <p className={classes.technologies}>
                     <Badge>Node.js</Badge>

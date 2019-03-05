@@ -22,7 +22,7 @@ class AboutMe extends React.Component {
       classes.imgFluid,
     );
     return (
-      <div className={classes.container}>
+      <div className={classes.container} id="aboutMe">
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={6}>
             <div className={classes.profile}>

@@ -3,6 +3,9 @@ import { defaultFont } from "assets/jss/material-kit-react.jsx";
 import tooltip from "assets/jss/material-kit-react/tooltipsStyle.jsx";
 
 const headerLinksStyle = theme => ({
+  dropdownMenu: {
+
+  },
   list: {
     ...defaultFont,
     fontSize: "14px",

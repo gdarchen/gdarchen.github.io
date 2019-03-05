@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import Carousel from "react-slick";
 // nodejs library that concatenates classes
-// import classNames from "classnames";
+import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import Slide from "@material-ui/core/Slide";
@@ -222,7 +222,7 @@ class Projects extends React.Component {
     const { isModalOpened, projectInModal } = this.state;
 
     return (
-      <div className={classes.container}>
+      <div className={classNames(classes.container, classes.projectsContainer)} id="projects">
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
             <h2 className={classes.sectionTitleCentered}>Projects</h2>

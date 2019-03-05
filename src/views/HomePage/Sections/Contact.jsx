@@ -19,42 +19,48 @@ import Button from "components/CustomButtons/Button.jsx";
 import contactStyle from "../Styles/SectionsStyles/contact.jsx";
 
 class Contact extends React.Component {
-	render() {
-		const { classes } = this.props;
-		return (
-			<div className={classes.section}>
-				<div className={classes.container}>
-					<GridContainer justify="center">
-						<GridItem xs={12} sm={12} md={4}>
-							<Card>
-								<CardHeader color="primary" className={classes.cardHeader}>
-									<h4>Contact</h4>
-								</CardHeader>
-								<CardBody className={classes.cardBody}>
-									<div className={classes.cardBodyRow}>
-										<div>
-											<Button justIcon round color="info">
-												<ContactPhone className={classes.icons} />
-											</Button>
-										</div>
-										<div className={classes.cardBodyRowData}>+ 33 6 59 20 92 40</div>
-									</div>
-									<div className={classes.cardBodyRow}>
-										<div>
-											<Button justIcon round color="info">
-												<Email className={classes.icons} />
-											</Button>
-										</div>
-										<div className={classes.cardBodyRowData}><a href="mailto:darchen.gautier@gmail.com">darchen.gautier@gmail.com</a></div>
-									</div>
-								</CardBody>
-							</Card>
-						</GridItem>
-					</GridContainer>
-				</div>
-			</div>
-		);
-	}
+  render() {
+    const { classes } = this.props;
+    return (
+      <div className={classes.section} id="contact">
+        <div className={classes.container}>
+          <GridContainer justify="center">
+            <GridItem xs={12} sm={12} md={4}>
+              <Card>
+                <CardHeader color="primary" className={classes.cardHeader}>
+                  <h4>Contact</h4>
+                </CardHeader>
+                <CardBody className={classes.cardBody}>
+                  <div className={classes.cardBodyRow}>
+                    <div>
+                      <Button justIcon round color="info">
+                        <ContactPhone className={classes.icons} />
+                      </Button>
+                    </div>
+                    <div className={classes.cardBodyRowData}>
+                      + 33 6 59 20 92 40
+                    </div>
+                  </div>
+                  <div className={classes.cardBodyRow}>
+                    <div>
+                      <Button justIcon round color="info">
+                        <Email className={classes.icons} />
+                      </Button>
+                    </div>
+                    <div className={classes.cardBodyRowData}>
+                      <a href="mailto:darchen.gautier@gmail.com">
+                        darchen.gautier@gmail.com
+                      </a>
+                    </div>
+                  </div>
+                </CardBody>
+              </Card>
+            </GridItem>
+          </GridContainer>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default withStyles(contactStyle)(Contact);

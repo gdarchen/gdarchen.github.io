@@ -3,7 +3,11 @@ import { container } from "assets/jss/material-kit-react.jsx";
 const projectsStyle = {
   container,
   sectionTitleCentered: {
-    textAlign: "center"
+    textAlign: "center",
+    marginTop: "30px!important"
+  },
+  projectsContainer: {
+    maxWidth: "unset"
   },
   timelineZone: {
     backgroundColor: "rgb(227, 227, 227)",

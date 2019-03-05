@@ -2,9 +2,12 @@ import { container } from "assets/jss/material-kit-react.jsx";
 
 const experiencesStyle = {
   container,
+  experienceContainer: {
+    maxWidth: "unset"
+  },
   sectionTitleCentered: {
     textAlign: "center",
-    marginTop: "20px!important"
+    marginTop: "30px!important"
   },
   timelineZone: {
     backgroundColor: "rgb(227, 227, 227)",
@@ -12,11 +15,11 @@ const experiencesStyle = {
   },
   verticalTimeline: {
     "& .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date": {
-      left: "145%!important",
+      left: "135%!important",
       right: "auto!important"
     },
     "& .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date": {
-      right: "145%!important",
+      right: "135%!important",
       left: "auto!important"
     },
     "& .vertical-timeline-element--work .vertical-timeline-element-content": {
