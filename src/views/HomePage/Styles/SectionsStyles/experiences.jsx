@@ -26,6 +26,18 @@ const experiencesStyle = {
     },
     "& .vertical-timeline-element--highschool .vertical-timeline-element-content": {
       borderTop: "3px solid #d47d35"
+    },
+    "& .vertical-timeline-element--bimandco .vertical-timeline-element-content": {
+      borderTop: "3px solid #D9C42B"
+    },
+    "& .vertical-timeline-element--picaerow .vertical-timeline-element-content": {
+      borderTop: "3px solid #2BB9D9"
+    },
+    "& .vertical-timeline-element--asi .vertical-timeline-element-content": {
+      borderTop: "3px solid #D92B2B"
+    },
+    "& .vertical-timeline-element--prepa .vertical-timeline-element-content": {
+      borderTop: "3px solid #C365B9"
     }
   },
   technologies: {

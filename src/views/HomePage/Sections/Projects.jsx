@@ -73,7 +73,9 @@ const projects = [
       "During the first 6 months, I was Project Manager."
     ],
     technologies: ["Symfony", "Scrum", "PHP", "ELK"],
-    icon: <FaFileInvoice />
+    icon: <FaFileInvoice />,
+    classTag: "picaerow",
+    color: "#FE5530"
   },
   /* WhatsASI? */
   {
@@ -87,7 +89,9 @@ const projects = [
     technologies: ["Java 8", "JavaFX", "AI", "RMI", "Messaging"],
     images: [whatsASI1, whatsASI2, whatsASI3],
     github: "https://github.com/gdarchen/WhatsASI",
-    icon: <TiMessages />
+    icon: <TiMessages />,
+    classTag: "whatsasi",
+    color: "#E19C11"
   },
   /* SOS Touriste */
   {
@@ -99,7 +103,9 @@ const projects = [
     ],
     technologies: ["Swift", "iOS", "Mobile"],
     images: [sosTouriste1, sosTouriste2],
-    icon: <FaAppStoreIos />
+    icon: <FaAppStoreIos />,
+    classTag: "sostouriste",
+    color: "#11E1E1"
   },
   /* Screen blurrer */
   {
@@ -113,7 +119,9 @@ const projects = [
     technologies: ["OpenCV", "Python"],
     images: [screenBlurrer],
     github: "https://github.com/gdarchen/screen-blurrer",
-    icon: <FaUserShield />
+    icon: <FaUserShield />,
+    classTag: "screenblurrer",
+    color: "#7911E1"
   },
   /* Portable game console */
   {
@@ -126,7 +134,9 @@ const projects = [
     technologies: ["Arduino", "3D", "Electronics"],
     images: [elec],
     github: "https://github.com/gdarchen/breakout",
-    icon: <GiJoystick />
+    icon: <GiJoystick />,
+    classTag: "portableconsole",
+    color: "#E11166"
   },
   /* Mini adventure game */
   {
@@ -139,7 +149,9 @@ const projects = [
     technologies: ["Java 8"],
     images: [ASIaventure],
     github: "https://github.com/gdarchen/ASIAventure",
-    icon: <FaJava />
+    icon: <FaJava />,
+    classTag: "asiaventure",
+    color: "#D9C42B"
   },
   /* Othello */
   {
@@ -152,7 +164,9 @@ const projects = [
     technologies: ["C", "Min-max", "AI", "V-Model"],
     images: [othello],
     github: "https://github.com/gdarchen/othello",
-    icon: <GiConwayLifeGlider />
+    icon: <GiConwayLifeGlider />,
+    classTag: "othello",
+    color: "#2BD975"
   },
   /* bASIc Compiler */
   {
@@ -165,7 +179,9 @@ const projects = [
     technologies: ["Lex", "Yacc", "Compiler"],
     images: [bASIc],
     github: "https://github.com/gdarchen/bASIc-compiler",
-    icon: <FaLaptopCode />
+    icon: <FaLaptopCode />,
+    classTag: "basic",
+    color: "#2BCCD9"
   },
   /* Memory game */
   {
@@ -219,10 +235,16 @@ class Projects extends React.Component {
               <VerticalTimeline layout="1-column">
                 {projects.map((project, key) => (
                   <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
+                    className={
+                      project.classTag
+                        ? `vertical-timeline-element--${project.classTag}`
+                        : "vertical-timeline-element--work"
+                    }
                     date={project.dates}
                     iconStyle={{
-                      background: "rgb(33, 150, 243)",
+                      background: project.color
+                        ? project.color
+                        : "rgb(33, 150, 243)",
                       color: "#fff"
                     }}
                     icon={project.icon ? project.icon : <Work />}

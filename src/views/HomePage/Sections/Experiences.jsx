@@ -8,9 +8,18 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import Work from "@material-ui/icons/Work";
 import School from "@material-ui/icons/School";
-import Create from "@material-ui/icons/Create";
 import Stars from "@material-ui/icons/Stars";
 import LocationOn from "@material-ui/icons/LocationOn";
+
+import {
+  FaGraduationCap,
+  FaCalculatorAlt,
+  FaCode,
+  FaPeopleCarry,
+  FaCodeBranch,
+  FaJsSquare
+} from "react-icons/fa";
+import { Md3dRotation } from "react-icons/md";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -51,7 +60,7 @@ class Experiences extends React.Component {
                   className="vertical-timeline-element--work"
                   date="July 2018 - today"
                   iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-                  icon={<Work />}
+                  icon={<FaJsSquare />}
                 >
                   <h3 className="vertical-timeline-element-title">
                     Full stack web engineer
@@ -87,7 +96,7 @@ class Experiences extends React.Component {
                   className="vertical-timeline-element--education"
                   date="February 2018 - July 2018"
                   iconStyle={{ background: "#e91e63", color: "#fff" }}
-                  icon={<School />}
+                  icon={<FaCodeBranch />}
                 >
                   <h3 className="vertical-timeline-element-title">
                     Engineering internship - "Takima Academy" training
@@ -131,10 +140,10 @@ class Experiences extends React.Component {
 
                 {/* Specialty internship */}
                 <VerticalTimelineElement
-                  className="vertical-timeline-element--education"
+                  className="vertical-timeline-element--bimandco"
                   date="Juny 2017 - August 2017"
-                  iconStyle={{ background: "#e91e63", color: "#fff" }}
-                  icon={<School />}
+                  iconStyle={{ background: "#D9C42B", color: "#fff" }}
+                  icon={<Md3dRotation />}
                 >
                   <h3 className="vertical-timeline-element-title">
                     Specialty internship in Germany
@@ -158,10 +167,10 @@ class Experiences extends React.Component {
 
                 {/* Project Manager */}
                 <VerticalTimelineElement
-                  className="vertical-timeline-element--education"
+                  className="vertical-timeline-element--picaerow"
                   date="all year 2017"
-                  iconStyle={{ background: "#e91e63", color: "#fff" }}
-                  icon={<School />}
+                  iconStyle={{ background: "#2BB9D9", color: "#fff" }}
+                  icon={<FaPeopleCarry />}
                 >
                   <h3 className="vertical-timeline-element-title">
                     Project Manager (ISO 9001:2015 certified)
@@ -186,10 +195,10 @@ class Experiences extends React.Component {
 
                 {/* Specialization in ASI */}
                 <VerticalTimelineElement
-                  className="vertical-timeline-element--education"
+                  className="vertical-timeline-element--asi"
                   date="2015 - 2017"
-                  iconStyle={{ background: "#e91e63", color: "#fff" }}
-                  icon={<School />}
+                  iconStyle={{ background: "#D92B2B", color: "#fff" }}
+                  icon={<FaCode />}
                 >
                   <h3 className="vertical-timeline-element-title">
                     Specialization in Architecture of Information Systems
@@ -202,10 +211,10 @@ class Experiences extends React.Component {
 
                 {/* Preparatory cycle */}
                 <VerticalTimelineElement
-                  className="vertical-timeline-element--education"
+                  className="vertical-timeline-element--prepa"
                   date="2013 - 2015"
-                  iconStyle={{ background: "#e91e63", color: "#fff" }}
-                  icon={<School />}
+                  iconStyle={{ background: "#C365B9", color: "#fff" }}
+                  icon={<FaCalculatorAlt />}
                 >
                   <h3 className="vertical-timeline-element-title">
                     Preparatory cycle for engineering schools
@@ -221,7 +230,7 @@ class Experiences extends React.Component {
                   className="vertical-timeline-element--highschool"
                   date="2013"
                   iconStyle={{ background: "#d47d35", color: "#fff" }}
-                  icon={<Create />}
+                  icon={<FaGraduationCap />}
                 >
                   <h3 className="vertical-timeline-element-title">
                     Scientific Baccalaureate — Baccalaureate with distinction

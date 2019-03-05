@@ -30,6 +30,30 @@ const projectsStyle = {
     },
     "& .vertical-timeline-element--highschool .vertical-timeline-element-content": {
       borderTop: "3px solid #d47d35"
+    },
+    "& .vertical-timeline-element--picaerow .vertical-timeline-element-content": {
+      borderTop: "3px solid #FE5530"
+    },
+    "& .vertical-timeline-element--whatsasi .vertical-timeline-element-content": {
+      borderTop: "3px solid #E19C11"
+    },
+    "& .vertical-timeline-element--sostouriste .vertical-timeline-element-content": {
+      borderTop: "3px solid #11E1E1"
+    },
+    "& .vertical-timeline-element--screenblurrer .vertical-timeline-element-content": {
+      borderTop: "3px solid #7911E1"
+    },
+    "& .vertical-timeline-element--portableconsole .vertical-timeline-element-content": {
+      borderTop: "3px solid #E11166"
+    },
+    "& .vertical-timeline-element--asiaventure .vertical-timeline-element-content": {
+      borderTop: "3px solid #D9C42B"
+    },
+    "& .vertical-timeline-element--othello .vertical-timeline-element-content": {
+      borderTop: "3px solid #2BD975"
+    },
+    "& .vertical-timeline-element--basic .vertical-timeline-element-content": {
+      borderTop: "3px solid #2BCCD9"
     }
   },
   technologies: {
