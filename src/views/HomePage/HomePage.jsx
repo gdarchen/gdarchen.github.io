@@ -43,7 +43,7 @@ class HomePage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax image={require("assets/img/bg4.jpg")}>
+        <Parallax image={require("assets/img/profile-bg.jpg")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem>
