@@ -64,10 +64,10 @@ function HeaderLinks({...props}) {
           classes={{tooltip: classes.tooltip}}
         >
           <Button
-            onClick={() => alert('NOT IMPLEMENTED YET')}
             color="transparent"
             target="_blank"
             className={classes.navLink}
+            href={require("assets/pdf/CV_GautierDarchen.pdf")}
           >
             <CloudDownload className={classes.icons}/> Résumé
           </Button>

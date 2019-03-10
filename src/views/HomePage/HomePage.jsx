@@ -51,8 +51,10 @@ class HomePage extends React.Component {
                   <h1 className={classes.title}>Gautier Darchen</h1>
                   <h3 className={classes.subtitle}>
                     Full stack web engineer at{" "}
-                    <a href="https://takima.fr">Takima</a>, specialized in
-                    React, Node.js and Spring technologies.
+                    <a href="https://takima.fr" className={classes.link}>
+                      Takima
+                    </a>
+                    , specialized in React, Node.js and Spring technologies.
                   </h3>
                 </div>
               </GridItem>
