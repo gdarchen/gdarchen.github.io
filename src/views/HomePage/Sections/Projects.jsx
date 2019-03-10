@@ -28,6 +28,7 @@ import {
 } from "react-icons/fa";
 import { TiMessages } from "react-icons/ti";
 import { GiJoystick, GiConwayLifeGlider, GiBackForth } from "react-icons/gi";
+import { GoTerminal} from "react-icons/go";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -61,6 +62,10 @@ import chronos1 from "assets/img/projects/ihmeChronos/chronos1.png";
 import chronos2 from "assets/img/projects/ihmeChronos/chronos2.png";
 import chronos3 from "assets/img/projects/ihmeChronos/chronos3.png";
 import chronos4 from "assets/img/projects/ihmeChronos/chronos4.png";
+import reacli1 from "assets/img/projects/reacli/reacli1.png";
+import reacli2 from "assets/img/projects/reacli/reacli2.png";
+import reacli3 from "assets/img/projects/reacli/reacli3.png";
+import reacli4 from "assets/img/projects/reacli/reacli4.png";
 
 const settings = {
   dots: true,
@@ -72,6 +77,24 @@ const settings = {
 };
 
 const projects = [
+  /* Reacli */
+  {
+    dates: "February 2019 - today",
+    title: "Reacli - A React CLI",
+    location: "Paris, France",
+    contents: [
+      'With two friends, we created and maintain an NPM libray, "Reacli".',
+      "It is a CLI for React, enabling to create components, hooks... and customize it with a lot of options!"
+    ],
+    technologies: ["JavaScript", "React", "Jest", "NPM"],
+    icon: <GoTerminal />,
+    images: [reacli1, reacli2, reacli3, reacli4],
+    github: "https://github.com/reacli/cli",
+    website: "https://reacli.github.io",
+    npm: "https://www.npmjs.com/package/reacli",
+    classTag: "reacli",
+    color: "#e2819d"
+  },
   /* Chronos agent */
   {
     dates: "Septembre 2018 - January 2019",
@@ -311,19 +334,49 @@ class Projects extends React.Component {
                       </p>
                     ))}
 
-                    {project.github && (
-                      <div className={classes.githubButton}>
-                        <Button
-                          justIcon
-                          round
-                          color="github"
-                          href={project.github}
-                          target="_blank"
-                        >
-                          <i className="fab fa-github" />
-                        </Button>
-                      </div>
-                    )}
+                    <div className={classes.projectsExternalResources}>
+                      {project.github && (
+                        <span>
+                          <Button
+                            justIcon
+                            round
+                            color="github"
+                            href={project.github}
+                            target="_blank"
+                          >
+                            <i className="fab fa-github" />
+                          </Button>
+                        </span>
+                      )}
+
+                      {project.npm && (
+                        <span>
+                          <Button
+                            color="danger"
+                            round
+                            href={project.npm}
+                            target="_blank"
+                          >
+                            <i className="fab fa-npm" />
+                            Package
+                          </Button>
+                        </span>
+                      )}
+
+                      {project.website && (
+                        <span>
+                          <Button
+                            round
+                            color="info"
+                            href={project.website}
+                            target="_blank"
+                          >
+                            <i className="fas fa-globe" />
+                            Website
+                          </Button>
+                        </span>
+                      )}
+                    </div>
 
                     {project.technologies && (
                       <p className={classes.technologies}>

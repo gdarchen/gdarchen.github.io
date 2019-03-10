@@ -64,6 +64,9 @@ const projectsStyle = {
     },
     "& .vertical-timeline-element--chronos .vertical-timeline-element-content": {
       borderTop: "3px solid #697dbc"
+    },
+    "& .vertical-timeline-element--reacli .vertical-timeline-element-content": {
+      borderTop: "3px solid #e2819d"
     }
   },
   technologies: {
@@ -109,8 +112,12 @@ const projectsStyle = {
       color: "#870404"
     }
   },
-  githubButton: {
-    textAlign: "center"
+  projectsExternalResources: {
+    textAlign: "center",
+    "& span": {
+      marginRight: "20px",
+      marginLeft: "20px"
+    }
   }
 };
 
