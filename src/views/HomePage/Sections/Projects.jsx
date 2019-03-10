@@ -22,7 +22,9 @@ import {
   FaAppStoreIos,
   FaUserShield,
   FaJava,
-  FaLaptopCode
+  FaLaptopCode,
+  FaCloud,
+  FaMicrophone
 } from "react-icons/fa";
 import { TiMessages } from "react-icons/ti";
 import { GiJoystick, GiConwayLifeGlider, GiBackForth } from "react-icons/gi";
@@ -52,6 +54,13 @@ import ASIaventure from "assets/img/projects/ASIAventure/ASIaventure.png";
 import othello from "assets/img/projects/Othello/othello.png";
 import bASIc from "assets/img/projects/bASIc/bASIc.png";
 import memory from "assets/img/projects/Memory/memory.png";
+import bigDataCFS1 from "assets/img/projects/bigDataCFS/bigDataCFS1.png";
+import bigDataCFS2 from "assets/img/projects/bigDataCFS/bigDataCFS2.png";
+import bigDataCFS3 from "assets/img/projects/bigDataCFS/bigDataCFS3.png";
+import chronos1 from "assets/img/projects/ihmeChronos/chronos1.png";
+import chronos2 from "assets/img/projects/ihmeChronos/chronos2.png";
+import chronos3 from "assets/img/projects/ihmeChronos/chronos3.png";
+import chronos4 from "assets/img/projects/ihmeChronos/chronos4.png";
 
 const settings = {
   dots: true,
@@ -63,6 +72,38 @@ const settings = {
 };
 
 const projects = [
+  /* Chronos agent */
+  {
+    dates: "Septembre 2018 - January 2019",
+    title: "Virtual agent",
+    location: "INSA Rouen-Normandie, Rouen, France",
+    contents: [
+      "At INSA Rouen, we created a mobile application to propose a virtual agent with whom we can discuss. It is possible to ask it to set up an alarm. It asks the questions oriented to have all the necessary information.",
+      "The buzzer associated with the alarm will match the weather of the user's location when it rings."
+    ],
+    technologies: ["react-native", "javascript", "dialogflow", "Node.js"],
+    icon: <FaMicrophone />,
+    images: [chronos1, chronos2, chronos3, chronos4],
+    github: "https://github.com/alexandre-lelain/ihme-agent-assistant",
+    classTag: "chronos",
+    color: "#697dbc"
+  },
+  /* BigData CFS */
+  {
+    dates: "Septembre 2018 - January 2019",
+    title: "Big Data and tweet in real time",
+    location: "INSA Rouen-Normandie, Rouen, France",
+    contents: [
+      "At INSA Rouen, we worked with Cassandra File System so as to analyze a big amount of tweets and evualuate a global valence.",
+      "We are then able to say if the majority of the people who have tweeted are for or against a given subject."
+    ],
+    technologies: ["CFS", "BigData", "Python3", "Docker"],
+    icon: <FaCloud />,
+    images: [bigDataCFS1, bigDataCFS2, bigDataCFS3],
+    github: "https://github.com/gdarchen/BigData-CFS",
+    classTag: "bigdataCFS",
+    color: "#97ba00"
+  },
   /* PIC AEROW */
   {
     dates: "January 2017 - January 2018",
@@ -222,7 +263,10 @@ class Projects extends React.Component {
     const { isModalOpened, projectInModal } = this.state;
 
     return (
-      <div className={classNames(classes.container, classes.projectsContainer)} id="projects">
+      <div
+        className={classNames(classes.container, classes.projectsContainer)}
+        id="projects"
+      >
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
             <h2 className={classes.sectionTitleCentered}>Projects</h2>

@@ -58,6 +58,12 @@ const projectsStyle = {
     },
     "& .vertical-timeline-element--basic .vertical-timeline-element-content": {
       borderTop: "3px solid #2BCCD9"
+    },
+    "& .vertical-timeline-element--bigdataCFS .vertical-timeline-element-content": {
+      borderTop: "3px solid #97ba00"
+    },
+    "& .vertical-timeline-element--chronos .vertical-timeline-element-content": {
+      borderTop: "3px solid #697dbc"
     }
   },
   technologies: {
