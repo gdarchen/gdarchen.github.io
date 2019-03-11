@@ -114,9 +114,10 @@ const projectsStyle = {
   },
   projectsExternalResources: {
     textAlign: "center",
-    "& span": {
-      marginRight: "20px",
-      marginLeft: "20px"
+    "@media (max-width: 767px)": {
+      "& span + span": {
+        marginLeft: "20px"
+      }
     }
   }
 };
