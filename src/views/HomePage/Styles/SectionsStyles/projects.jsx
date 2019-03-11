@@ -116,6 +116,11 @@ const projectsStyle = {
     textAlign: "center",
     "@media (max-width: 767px)": {
       "& span + span": {
+        display: "block"
+      }
+    },
+    "@media (min-width: 768px)": {
+      "& span + span": {
         marginLeft: "20px"
       }
     }
