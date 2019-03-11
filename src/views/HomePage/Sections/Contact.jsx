@@ -5,9 +5,7 @@ import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
-import ContactPhone from "@material-ui/icons/ContactPhone";
 import Email from "@material-ui/icons/Email";
-
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
@@ -17,6 +15,7 @@ import CardBody from "components/Card/CardBody.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
 import contactStyle from "../Styles/SectionsStyles/contact.jsx";
+import {FaLinkedin} from "react-icons/fa";
 
 class Contact extends React.Component {
   render() {
@@ -34,11 +33,13 @@ class Contact extends React.Component {
                   <div className={classes.cardBodyRow}>
                     <div>
                       <Button justIcon round color="info">
-                        <ContactPhone className={classes.icons} />
+                        <FaLinkedin className={classes.icons} />
                       </Button>
                     </div>
                     <div className={classes.cardBodyRowData}>
-                      + 33 6 59 20 92 40
+                      <a href="https://www.linkedin.com/in/gautierdarchen/">
+                        gautierdarchen
+                      </a>
                     </div>
                   </div>
                   <div className={classes.cardBodyRow}>
