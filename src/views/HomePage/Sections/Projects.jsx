@@ -83,7 +83,7 @@ const projects = [
     title: "Reacli - A React CLI",
     location: "Paris, France",
     contents: [
-      'With two friends, we created and maintain an NPM libray, "Reacli".',
+      'With two friends, we created and maintain an NPM library, "Reacli".',
       "It is a CLI for React, enabling to create components, hooks... and customize it with a lot of options!"
     ],
     technologies: ["JavaScript", "React", "Jest", "NPM"],
