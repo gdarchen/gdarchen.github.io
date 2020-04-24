@@ -4,88 +4,100 @@ const projectsStyle = {
   container,
   sectionTitleCentered: {
     textAlign: "center",
-    marginTop: "30px!important"
+    marginTop: "30px!important",
   },
   projectsContainer: {
-    maxWidth: "unset"
+    maxWidth: "unset",
   },
   timelineZone: {
     backgroundColor: "rgb(227, 227, 227)",
-    borderRadius: "5px"
+    borderRadius: "5px",
   },
   locationIcon: {
     position: "relative",
-    top: "5px"
+    top: "5px",
   },
   verticalTimeline: {
     "& .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date": {
       left: "145%!important",
-      right: "auto!important"
+      right: "auto!important",
     },
     "& .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date": {
       right: "145%!important",
-      left: "auto!important"
+      left: "auto!important",
     },
     "& .vertical-timeline-element--work .vertical-timeline-element-content": {
-      borderTop: "3px solid #2196f3"
+      borderTop: "3px solid #2196f3",
     },
     "& .vertical-timeline-element--education .vertical-timeline-element-content": {
-      borderTop: "3px solid #e91e63"
+      borderTop: "3px solid #e91e63",
     },
     "& .vertical-timeline-element--highschool .vertical-timeline-element-content": {
-      borderTop: "3px solid #d47d35"
+      borderTop: "3px solid #d47d35",
     },
     "& .vertical-timeline-element--picaerow .vertical-timeline-element-content": {
-      borderTop: "3px solid #FE5530"
+      borderTop: "3px solid #FE5530",
     },
     "& .vertical-timeline-element--whatsasi .vertical-timeline-element-content": {
-      borderTop: "3px solid #E19C11"
+      borderTop: "3px solid #E19C11",
     },
     "& .vertical-timeline-element--sostouriste .vertical-timeline-element-content": {
-      borderTop: "3px solid #11E1E1"
+      borderTop: "3px solid #11E1E1",
     },
     "& .vertical-timeline-element--screenblurrer .vertical-timeline-element-content": {
-      borderTop: "3px solid #7911E1"
+      borderTop: "3px solid #7911E1",
     },
     "& .vertical-timeline-element--portableconsole .vertical-timeline-element-content": {
-      borderTop: "3px solid #E11166"
+      borderTop: "3px solid #E11166",
     },
     "& .vertical-timeline-element--asiaventure .vertical-timeline-element-content": {
-      borderTop: "3px solid #D9C42B"
+      borderTop: "3px solid #D9C42B",
     },
     "& .vertical-timeline-element--othello .vertical-timeline-element-content": {
-      borderTop: "3px solid #2BD975"
+      borderTop: "3px solid #2BD975",
     },
     "& .vertical-timeline-element--basic .vertical-timeline-element-content": {
-      borderTop: "3px solid #2BCCD9"
+      borderTop: "3px solid #2BCCD9",
     },
     "& .vertical-timeline-element--bigdataCFS .vertical-timeline-element-content": {
-      borderTop: "3px solid #97ba00"
+      borderTop: "3px solid #97ba00",
     },
     "& .vertical-timeline-element--chronos .vertical-timeline-element-content": {
-      borderTop: "3px solid #697dbc"
+      borderTop: "3px solid #697dbc",
     },
     "& .vertical-timeline-element--reacli .vertical-timeline-element-content": {
-      borderTop: "3px solid #e2819d"
-    }
+      borderTop: "3px solid #e2819d",
+    },
+    "& .vertical-timeline-element--talk-webusb .vertical-timeline-element-content": {
+      borderTop: "3px solid #1df582",
+    },
   },
   technologies: {
-    textAlign: "center"
+    textAlign: "center",
   },
   projectsContent: {
     textAlign: "justify",
-    fontWeight: "unset!important"
+    fontWeight: "unset!important",
+  },
+  eventsTitle: {
+    fontWeight: "bold",
+    fontStyle: "italic",
+  },
+  projectsEvents: {
+    marginTop: "20px",
+    textAlign: "justify",
+    fontWeight: "unset!important",
   },
   section: {
-    padding: "70px 0"
+    padding: "70px 0",
   },
   marginAuto: {
     marginLeft: "auto !important",
-    marginRight: "auto !important"
+    marginRight: "auto !important",
   },
   carousel: {
     marginTop: "15px",
-    cursor: "pointer"
+    cursor: "pointer",
   },
   modalHeader: {
     minHeight: "16.43px",
@@ -93,7 +105,7 @@ const projectsStyle = {
     paddingLeft: "24px",
     borderBottom: "none",
     paddingRight: "24px",
-    paddingBottom: "0"
+    paddingBottom: "0",
   },
   modalCloseButton: {
     float: "right",
@@ -109,22 +121,26 @@ const projectsStyle = {
     backgroundColor: "transparent",
     color: "#F60707",
     "&:hover": {
-      color: "#870404"
-    }
+      color: "#870404",
+    },
   },
   projectsExternalResources: {
     textAlign: "center",
     "@media (max-width: 767px)": {
       "& span + span": {
-        display: "block"
-      }
+        display: "block",
+      },
     },
     "@media (min-width: 768px)": {
       "& span + span": {
-        marginLeft: "20px"
-      }
-    }
-  }
+        marginLeft: "20px",
+      },
+    },
+  },
+  reactPlayer: {
+    width: "unset !important",
+    marginTop: "20px",
+  },
 };
 
 export default projectsStyle;
