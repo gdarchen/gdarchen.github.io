@@ -33,6 +33,7 @@ import {
 import { TiMessages } from 'react-icons/ti';
 import { GiJoystick, GiConwayLifeGlider, GiBackForth } from 'react-icons/gi';
 import { GoTerminal } from 'react-icons/go';
+import { GrNext, GrPrevious } from 'react-icons/gr';
 
 // core components
 import GridContainer from 'components/Grid/GridContainer.jsx';
@@ -68,6 +69,17 @@ import reacli2 from 'assets/img/projects/reacli/reacli2.png';
 import reacli3 from 'assets/img/projects/reacli/reacli3.png';
 import reacli4 from 'assets/img/projects/reacli/reacli4.png';
 
+const Arrow = ({ className, to, onClick }) => (
+  <button
+    type="button"
+    onClick={onClick}
+    className={`button button--text button--icon carousel--arrow ${className}`}
+    aria-label={to}
+  >
+    {to === 'next' ? <GrNext /> : <GrPrevious />}
+  </button>
+);
+
 const settings = {
   dots: true,
   infinite: true,
@@ -76,6 +88,8 @@ const settings = {
   slidesToScroll: 1,
   autoplay: false,
   adaptiveHeight: true,
+  prevArrow: <Arrow to="prev" />,
+  nextArrow: <Arrow to="next" />,
 };
 
 const projects = [

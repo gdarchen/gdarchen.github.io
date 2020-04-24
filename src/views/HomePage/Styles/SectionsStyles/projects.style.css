@@ -2,3 +2,13 @@
 .slick-next:before {
   color: red !important;
 }
+
+.carousel--arrow::before {
+  content: unset;
+}
+
+.carousel--arrow svg {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+}
