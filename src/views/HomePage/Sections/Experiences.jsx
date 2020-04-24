@@ -11,13 +11,13 @@ import LocationOn from "@material-ui/icons/LocationOn";
 
 import {
   FaGraduationCap,
-  FaCalculatorAlt,
+  FaCalculator,
   FaCode,
   FaPeopleCarry,
   FaCodeBranch,
-  FaJsSquare
+  FaJsSquare,
 } from "react-icons/fa";
-import { Md3dRotation } from "react-icons/md";
+import { Md3DRotation, MdMovieFilter } from "react-icons/md";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -29,7 +29,7 @@ import Badge from "components/Badge/Badge.jsx";
 
 import {
   VerticalTimeline,
-  VerticalTimelineElement
+  VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
@@ -56,15 +56,45 @@ class Experiences extends React.Component {
           <GridItem xs={12} sm={12} md={12}>
             <div className={classes.verticalTimeline}>
               <VerticalTimeline>
+                {/* Job at Kannelle */}
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work-kannelle"
+                  date="May 2020 - today"
+                  iconStyle={{ background: "rgb(0, 225, 131)", color: "#fff" }}
+                  icon={<MdMovieFilter />}
+                >
+                  <h3 className="vertical-timeline-element-title">
+                    Full stack web engineer
+                  </h3>
+                  <h4 className="vertical-timeline-element-subtitle">
+                    <LocationOn className={classes.locationIcon} />
+                    Kannelle, Paris, France
+                  </h4>
+                  <p className={classes.experienceContent}>
+                    In a startup context, I am in charge of developing the web
+                    platform of the Kannelle application as well as the
+                    administration module.
+                  </p>
+                  <p className={classes.technologies}>
+                    <Badge>React</Badge>
+                    <Badge>Node.js</Badge>
+                    <Badge>Git</Badge>
+                    <Badge>Jest</Badge>
+                    <Badge>Sass</Badge>
+                    <Badge>Webpack</Badge>
+                    <Badge>GraphQL</Badge>
+                  </p>
+                </VerticalTimelineElement>
+
                 {/* Job at Takima */}
                 <VerticalTimelineElement
-                  className="vertical-timeline-element--work"
-                  date="July 2018 - today"
+                  className="vertical-timeline-element--work-takima"
+                  date="July 2018 - April 2020"
                   iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
                   icon={<FaJsSquare />}
                 >
                   <h3 className="vertical-timeline-element-title">
-                    Full stack web engineer
+                    Full stack web engineer — IT consultant
                   </h3>
                   <h4 className="vertical-timeline-element-subtitle">
                     <LocationOn className={classes.locationIcon} />
@@ -87,6 +117,11 @@ class Experiences extends React.Component {
                     <Badge>Jest</Badge>
                     <Badge>Git</Badge>
                     <Badge>NFC</Badge>
+                    <Badge>WebUSB</Badge>
+                    <Badge>Jenkins</Badge>
+                    <Badge>Bitbucket</Badge>
+                    <Badge>Jira</Badge>
+                    <Badge>Docker</Badge>
                     <Badge>Sass</Badge>
                     <Badge>SQLServer</Badge>
                   </p>
@@ -144,7 +179,7 @@ class Experiences extends React.Component {
                   className="vertical-timeline-element--bimandco"
                   date="Juny 2017 - August 2017"
                   iconStyle={{ background: "#D9C42B", color: "#fff" }}
-                  icon={<Md3dRotation />}
+                  icon={<Md3DRotation />}
                 >
                   <h3 className="vertical-timeline-element-title">
                     Specialty internship in Germany
@@ -215,7 +250,7 @@ class Experiences extends React.Component {
                   className="vertical-timeline-element--prepa"
                   date="2013 - 2015"
                   iconStyle={{ background: "#C365B9", color: "#fff" }}
-                  icon={<FaCalculatorAlt />}
+                  icon={<FaCalculator />}
                 >
                   <h3 className="vertical-timeline-element-title">
                     Preparatory cycle for engineering schools

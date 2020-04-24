@@ -39,7 +39,7 @@ class HomePage extends React.Component {
           color="transparent"
           changeColorOnScroll={{
             height: 400,
-            color: "white"
+            color: "white",
           }}
           {...rest}
         />
@@ -51,8 +51,8 @@ class HomePage extends React.Component {
                   <h1 className={classes.title}>Gautier Darchen</h1>
                   <h3 className={classes.subtitle}>
                     Full stack web engineer at{" "}
-                    <a href="https://takima.fr" className={classes.link}>
-                      Takima
+                    <a href="https://kannelle.io" className={classes.link}>
+                      Kannelle
                     </a>
                     , specialized in React, Node.js and Spring technologies.
                   </h3>
@@ -77,7 +77,7 @@ class HomePage extends React.Component {
 }
 
 HomePage.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(homePageStyle)(HomePage);
