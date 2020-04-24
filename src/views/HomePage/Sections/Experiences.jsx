@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 // react components for routing our app without refresh
 // import { Link } from "react-router-dom";
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
+import withStyles from '@material-ui/core/styles/withStyles';
 // @material-ui/icons
-import Stars from "@material-ui/icons/Stars";
-import LocationOn from "@material-ui/icons/LocationOn";
+import Stars from '@material-ui/icons/Stars';
+import LocationOn from '@material-ui/icons/LocationOn';
 
 import {
   FaGraduationCap,
@@ -16,40 +16,32 @@ import {
   FaPeopleCarry,
   FaCodeBranch,
   FaVideo,
-} from "react-icons/fa";
-import { Md3DRotation } from "react-icons/md";
-import { GiDiamondRing } from "react-icons/gi";
+} from 'react-icons/fa';
+import { Md3DRotation } from 'react-icons/md';
+import { GiDiamondRing } from 'react-icons/gi';
 
 // core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import Badge from "components/Badge/Badge.jsx";
+import GridContainer from 'components/Grid/GridContainer.jsx';
+import GridItem from 'components/Grid/GridItem.jsx';
+import Badge from 'components/Badge/Badge.jsx';
 
 // import Button from "components/CustomButtons/Button.jsx";
 // sections for this page
 
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
-import experiencesStyle from "../Styles/SectionsStyles/experiences.jsx";
+import experiencesStyle from '../Styles/SectionsStyles/experiences.jsx';
 
 class Experiences extends React.Component {
   render() {
     const { classes } = this.props;
 
     return (
-      <div
-        className={classNames(classes.container, classes.experienceContainer)}
-        id="experiences"
-      >
+      <div className={classNames(classes.container, classes.experienceContainer)} id="experiences">
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h2 className={classes.sectionTitleCentered}>
-              Work experience &amp; Education
-            </h2>
+            <h2 className={classes.sectionTitleCentered}>Work experience &amp; Education</h2>
           </GridItem>
         </GridContainer>
 
@@ -61,20 +53,17 @@ class Experiences extends React.Component {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work-kannelle"
                   date="May 2020 - today"
-                  iconStyle={{ background: "rgb(0, 225, 131)", color: "#fff" }}
+                  iconStyle={{ background: 'rgb(0, 225, 131)', color: '#fff' }}
                   icon={<FaVideo />}
                 >
-                  <h3 className="vertical-timeline-element-title">
-                    Full stack web engineer
-                  </h3>
+                  <h3 className="vertical-timeline-element-title">Full stack web engineer</h3>
                   <h4 className="vertical-timeline-element-subtitle">
                     <LocationOn className={classes.locationIcon} />
                     Kannelle, Paris, France
                   </h4>
                   <p className={classes.experienceContent}>
-                    In a startup context, I am in charge of developing the web
-                    platform of the Kannelle application as well as the
-                    administration module.
+                    In a startup context, I am in charge of developing the web platform of the
+                    Kannelle application as well as the administration module.
                   </p>
                   <p className={classes.technologies}>
                     <Badge>React</Badge>
@@ -91,7 +80,7 @@ class Experiences extends React.Component {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work-takima"
                   date="July 2018 - April 2020"
-                  iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+                  iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                   icon={<GiDiamondRing />}
                 >
                   <h3 className="vertical-timeline-element-title">
@@ -102,14 +91,13 @@ class Experiences extends React.Component {
                     Takima, Paris, France
                   </h4>
                   <p className={classes.experienceContent}>
-                    Working for Cartier Joaillerie International, I developed
-                    several applications to improve the time management in
-                    workshops or gain a lot of time in the processes of
-                    logistics.
+                    Working for Cartier Joaillerie International, I developed several applications
+                    to improve the time management in workshops or gain a lot of time in the
+                    processes of logistics.
                   </p>
                   <p className={classes.experienceContent}>
-                    Using Devops methodology, I was also in charge of setting up
-                    a new technological stack at the IS pole.
+                    Using Devops methodology, I was also in charge of setting up a new technological
+                    stack at the IS pole.
                   </p>
                   <p className={classes.technologies}>
                     <Badge>Node.js</Badge>
@@ -132,7 +120,7 @@ class Experiences extends React.Component {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--education"
                   date="February 2018 - July 2018"
-                  iconStyle={{ background: "#e91e63", color: "#fff" }}
+                  iconStyle={{ background: '#e91e63', color: '#fff' }}
                   icon={<FaCodeBranch />}
                 >
                   <h3 className="vertical-timeline-element-title">
@@ -142,10 +130,7 @@ class Experiences extends React.Component {
                     <LocationOn className={classes.locationIcon} />
                     Takima, Paris, France
                   </h4>
-                  <div
-                    className={classes.experienceContent}
-                    style={{ marginTop: "1em" }}
-                  >
+                  <div className={classes.experienceContent} style={{ marginTop: '1em' }}>
                     Project training in the following areas:
                     <ul>
                       <li>back-end development</li>
@@ -179,7 +164,7 @@ class Experiences extends React.Component {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--bimandco"
                   date="Juny 2017 - August 2017"
-                  iconStyle={{ background: "#D9C42B", color: "#fff" }}
+                  iconStyle={{ background: '#D9C42B', color: '#fff' }}
                   icon={<Md3DRotation />}
                 >
                   <h3 className="vertical-timeline-element-title">
@@ -190,9 +175,8 @@ class Experiences extends React.Component {
                     BIM&amp;CO - KiM GmbH, Sankt-Wendel, Germany
                   </h4>
                   <p className={classes.experienceContent}>
-                    Development of two plugins for the CAD software Allplan® in
-                    the field of BIM objects (
-                    <i>Building Information Modeling</i>)
+                    Development of two plugins for the CAD software Allplan® in the field of BIM
+                    objects (<i>Building Information Modeling</i>)
                   </p>
                   <p className={classes.technologies}>
                     <Badge>C++</Badge>
@@ -206,7 +190,7 @@ class Experiences extends React.Component {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--picaerow"
                   date="all year 2017"
-                  iconStyle={{ background: "#2BB9D9", color: "#fff" }}
+                  iconStyle={{ background: '#2BB9D9', color: '#fff' }}
                   icon={<FaPeopleCarry />}
                 >
                   <h3 className="vertical-timeline-element-title">
@@ -217,8 +201,7 @@ class Experiences extends React.Component {
                     AEROW Solutions (with INSA Rouen-Normandie), Rouen, France
                   </h4>
                   <p className={classes.experienceContent}>
-                    Redesign a web application for Electronic Document
-                    Management (team of 8 people)
+                    Redesign a web application for Electronic Document Management (team of 8 people)
                   </p>
                   <p className={classes.technologies}>
                     <Badge>Symfony</Badge>
@@ -234,7 +217,7 @@ class Experiences extends React.Component {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--asi"
                   date="2015 - 2017"
-                  iconStyle={{ background: "#D92B2B", color: "#fff" }}
+                  iconStyle={{ background: '#D92B2B', color: '#fff' }}
                   icon={<FaCode />}
                 >
                   <h3 className="vertical-timeline-element-title">
@@ -250,7 +233,7 @@ class Experiences extends React.Component {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--prepa"
                   date="2013 - 2015"
-                  iconStyle={{ background: "#C365B9", color: "#fff" }}
+                  iconStyle={{ background: '#C365B9', color: '#fff' }}
                   icon={<FaCalculator />}
                 >
                   <h3 className="vertical-timeline-element-title">
@@ -266,7 +249,7 @@ class Experiences extends React.Component {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--highschool"
                   date="2013"
-                  iconStyle={{ background: "#d47d35", color: "#fff" }}
+                  iconStyle={{ background: '#d47d35', color: '#fff' }}
                   icon={<FaGraduationCap />}
                 >
                   <h3 className="vertical-timeline-element-title">
@@ -282,7 +265,7 @@ class Experiences extends React.Component {
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
-                  iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
+                  iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
                   icon={<Stars />}
                 />
               </VerticalTimeline>

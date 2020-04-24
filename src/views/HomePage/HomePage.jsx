@@ -1,30 +1,30 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 // react components for routing our app without refresh
 // import { Link } from "react-router-dom";
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
+import withStyles from '@material-ui/core/styles/withStyles';
 // @material-ui/icons
 // core components
-import Header from "components/Header/Header.jsx";
-import Footer from "components/Footer/Footer.jsx";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
+import Header from 'components/Header/Header.jsx';
+import Footer from 'components/Footer/Footer.jsx';
+import GridContainer from 'components/Grid/GridContainer.jsx';
+import GridItem from 'components/Grid/GridItem.jsx';
 // import Button from "components/CustomButtons/Button.jsx";
-import Parallax from "components/Parallax/Parallax.jsx";
+import Parallax from 'components/Parallax/Parallax.jsx';
 // sections for this page
-import HeaderLinks from "components/Header/HeaderLinks.jsx";
+import HeaderLinks from 'components/Header/HeaderLinks.jsx';
 
-import AboutMe from "./Sections/AboutMe.jsx";
-import Contact from "./Sections/Contact.jsx";
+import AboutMe from './Sections/AboutMe.jsx';
+import Contact from './Sections/Contact.jsx';
 
-import homePageStyle from "./Styles/homePage.jsx";
-import Experiences from "./Sections/Experiences.jsx";
-import Languages from "./Sections/Languages.jsx";
-import Projects from "./Sections/Projects.jsx";
-import Skills from "./Sections/Skills";
+import homePageStyle from './Styles/homePage.jsx';
+import Experiences from './Sections/Experiences.jsx';
+import Languages from './Sections/Languages.jsx';
+import Projects from './Sections/Projects.jsx';
+import Skills from './Sections/Skills';
 
 class HomePage extends React.Component {
   render() {
@@ -39,18 +39,18 @@ class HomePage extends React.Component {
           color="transparent"
           changeColorOnScroll={{
             height: 400,
-            color: "white",
+            color: 'white',
           }}
           {...rest}
         />
-        <Parallax image={require("assets/img/profile-bg.jpg")}>
+        <Parallax image={require('assets/img/profile-bg.jpg')}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
                   <h1 className={classes.title}>Gautier Darchen</h1>
                   <h3 className={classes.subtitle}>
-                    Full stack web engineer at{" "}
+                    Full stack web engineer at{' '}
                     <a href="https://kannelle.io" className={classes.link}>
                       Kannelle
                     </a>
