@@ -15,9 +15,10 @@ import {
   FaCode,
   FaPeopleCarry,
   FaCodeBranch,
-  FaJsSquare,
+  FaVideo,
 } from "react-icons/fa";
-import { Md3DRotation, MdMovieFilter } from "react-icons/md";
+import { Md3DRotation } from "react-icons/md";
+import { GiDiamondRing } from "react-icons/gi";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -61,7 +62,7 @@ class Experiences extends React.Component {
                   className="vertical-timeline-element--work-kannelle"
                   date="May 2020 - today"
                   iconStyle={{ background: "rgb(0, 225, 131)", color: "#fff" }}
-                  icon={<MdMovieFilter />}
+                  icon={<FaVideo />}
                 >
                   <h3 className="vertical-timeline-element-title">
                     Full stack web engineer
@@ -91,7 +92,7 @@ class Experiences extends React.Component {
                   className="vertical-timeline-element--work-takima"
                   date="July 2018 - April 2020"
                   iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-                  icon={<FaJsSquare />}
+                  icon={<GiDiamondRing />}
                 >
                   <h3 className="vertical-timeline-element-title">
                     Full stack web engineer — IT consultant
