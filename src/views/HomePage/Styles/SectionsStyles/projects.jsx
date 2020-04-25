@@ -141,6 +141,14 @@ const projectsStyle = {
     width: 'unset !important',
     marginTop: '20px',
   },
+  talkBadge: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    '& svg': {
+      marginRight: '5px',
+    },
+  },
 };
 
 export default projectsStyle;

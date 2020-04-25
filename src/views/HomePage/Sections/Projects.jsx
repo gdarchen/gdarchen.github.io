@@ -96,8 +96,8 @@ const projects = [
   /* Talk WebUSB */
   {
     dates: 'December 2019 - today',
-    title:
-      'Talk — Interaction between a web app and a hand-made NFC USB Reader : WebUSB to the rescue!',
+    talk: true,
+    title: 'Interaction between a web app and a hand-made NFC USB Reader : WebUSB to the rescue!',
     location: 'Paris, France',
     contents: [
       'When developing a tool that interacts with an external device, we are usually forced to develop fat clients or use containers like Electron.',
@@ -349,6 +349,14 @@ class Projects extends React.Component {
                     icon={project.icon ? project.icon : <Work />}
                     key={`project-${key}`}
                   >
+                    {project.talk && (
+                      <Badge color="danger">
+                        <span className={classes.talkBadge}>
+                          <FaMicrophone />
+                          Talk
+                        </span>
+                      </Badge>
+                    )}
                     <h3 className="vertical-timeline-element-title">{project.title}</h3>
                     <h4 className="vertical-timeline-element-subtitle">
                       <LocationOn className={classes.locationIcon} />
