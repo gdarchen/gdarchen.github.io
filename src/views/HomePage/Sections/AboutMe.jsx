@@ -9,7 +9,7 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import GridContainer from 'components/Grid/GridContainer.jsx';
 import GridItem from 'components/Grid/GridItem.jsx';
 
-import profile from 'assets/img/faces/gautier.jpg';
+import profile from 'assets/img/faces/gdarchen-kannelle.png';
 
 import aboutMeStyle from '../Styles/SectionsStyles/aboutMe.jsx';
 
@@ -53,7 +53,9 @@ class AboutMe extends React.Component {
                 </p>
                 <p>
                   In 2020, I decided to join <strong>Kannelle</strong> and the world of startups in
-                  order to have more responsibilities and get better technically.
+                  order to have more responsibilities and get better technically. I am in charge of
+                  developing from scratch an administration platform to configure the experience
+                  within the mobile application.
                 </p>
               </div>
             </div>

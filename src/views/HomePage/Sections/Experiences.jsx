@@ -69,10 +69,9 @@ class Experiences extends React.Component {
                     <Badge>React</Badge>
                     <Badge>Node.js</Badge>
                     <Badge>Git</Badge>
-                    <Badge>Jest</Badge>
-                    <Badge>Sass</Badge>
+                    <Badge>CSS-in-JS</Badge>
                     <Badge>Webpack</Badge>
-                    <Badge>GraphQL</Badge>
+                    <Badge>Lottie</Badge>
                   </p>
                 </VerticalTimelineElement>
 

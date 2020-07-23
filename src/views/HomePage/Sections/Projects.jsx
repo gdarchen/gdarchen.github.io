@@ -292,9 +292,8 @@ const projects = [
     contents: [
       'Using Pascal and SDL, development of a Memory game. This game proposes 3 different levels, and manages a ranking.',
     ],
-    technologies: ['Lex', 'Yacc', 'Compiler'],
+    technologies: ['Pascal', 'SDL'],
     images: [memory],
-    github: 'https://github.com/gdarchen/bASIc-compiler',
     icon: <GiBackForth />,
   },
 ];

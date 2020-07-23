@@ -45,6 +45,7 @@ import {
   FaRedoAlt,
   FaAppStore,
   FaDatabase,
+  FaAirbnb,
 } from 'react-icons/fa';
 
 import { GiSandSnake } from 'react-icons/gi';
@@ -76,6 +77,7 @@ const advancedSkills = [
   { text: 'Scrum', icon: <FaRedoAlt /> },
   { text: 'TDD', icon: <FaCheckCircle /> },
   { text: 'SQL', icon: <FaDatabase /> },
+  { text: 'Lottie', icon: <FaAirbnb /> },
 ];
 
 const intermediateSkills = [
