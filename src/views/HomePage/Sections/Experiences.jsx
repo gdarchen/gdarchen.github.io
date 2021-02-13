@@ -63,7 +63,8 @@ class Experiences extends React.Component {
                   </h4>
                   <p className={classes.experienceContent}>
                     In a startup context, I am in charge of developing the web platform of the
-                    Kannelle application as well as the administration module.
+                    Kannelle application as well as the administration module (both front-end and
+                    back-end).
                   </p>
                   <p className={classes.technologies}>
                     <Badge>React</Badge>
@@ -72,6 +73,10 @@ class Experiences extends React.Component {
                     <Badge>CSS-in-JS</Badge>
                     <Badge>Webpack</Badge>
                     <Badge>Lottie</Badge>
+                    <Badge>AWS</Badge>
+                    <Badge>Serverless</Badge>
+                    <Badge>Neo4j</Badge>
+                    <Badge>Websockets</Badge>
                   </p>
                 </VerticalTimelineElement>
 

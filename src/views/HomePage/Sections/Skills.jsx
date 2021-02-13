@@ -46,10 +46,12 @@ import {
   FaAppStore,
   FaDatabase,
   FaAirbnb,
+  FaAws,
 } from 'react-icons/fa';
 
 import { GiSandSnake } from 'react-icons/gi';
 import { IoIosConstruct } from 'react-icons/io';
+import { SiNeo4J, SiServerless, SiSocketDotIo } from 'react-icons/si';
 
 // sections for this page
 
@@ -58,6 +60,8 @@ const advancedSkills = [
   { text: 'React', icon: <FaReact /> },
   { text: 'Node.js', icon: <FaNodeJs /> },
   { text: 'TypeScript', icon: <FaCode /> },
+  { text: 'AWS', icon: <FaAws /> },
+  { text: 'Serverless', icon: <SiServerless /> },
   { text: 'Java', icon: <FaJava /> },
   { text: 'Spring', icon: <FaLeaf /> },
   { text: 'Maven', icon: <FaFeather /> },
@@ -78,6 +82,8 @@ const advancedSkills = [
   { text: 'TDD', icon: <FaCheckCircle /> },
   { text: 'SQL', icon: <FaDatabase /> },
   { text: 'Lottie', icon: <FaAirbnb /> },
+  { text: 'Neo4j', icon: <SiNeo4J /> },
+  { text: 'Websockets', icon: <SiSocketDotIo /> },
 ];
 
 const intermediateSkills = [
