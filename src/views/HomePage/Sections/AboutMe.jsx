@@ -54,8 +54,10 @@ class AboutMe extends React.Component {
                 <p>
                   In 2020, I decided to join <strong>Kannelle</strong> and the world of startups in
                   order to have more responsibilities and get better technically. I am in charge of
-                  developing from scratch an administration platform to configure the experience
-                  within the mobile application.
+                  developing from scratch an administration platform enabling to configure the
+                  experience within the mobile application, as well as a video editor. During the
+                  mission, I was also given the responsibility for the back-end, DevOps and cloud
+                  architecture.
                 </p>
               </div>
             </div>

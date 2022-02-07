@@ -63,8 +63,8 @@ class Experiences extends React.Component {
                   </h4>
                   <p className={classes.experienceContent}>
                     In a startup context, I am in charge of developing the web platform of the
-                    Kannelle application as well as the administration module (both front-end and
-                    back-end).
+                    Kannelle application, a web video editor as well as the administration module. I
+                    also manage the back-end part, the DevOps and the cloud architecture.
                   </p>
                   <p className={classes.technologies}>
                     <Badge>React</Badge>
