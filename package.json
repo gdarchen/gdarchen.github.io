@@ -3,12 +3,14 @@
   "version": "2.1.0",
   "description": "Personal portfolio of Gautier Darchen",
   "private": true,
+  "homepage": "https://gdarchen.github.io",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build"
   },
   "dependencies": {
@@ -40,6 +42,8 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
     "@types/classnames": "^2.3.1",
     "@types/react-router-hash-link": "^2.4.5",
     "@types/react-slick": "^0.23.8",
