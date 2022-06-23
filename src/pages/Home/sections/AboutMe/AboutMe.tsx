@@ -45,12 +45,24 @@ const AboutMe = () => {
                 agile methodologies.
               </p>
               <p>
+                From 2018 to 2020, I worked at <strong>Cartier</strong> as a consultant, where I
+                built several fullstack applications to improve the working conditions and
+                performance of craftsmen in luxury jewelry manufacturing workshops.
+              </p>
+              <p>
                 In 2020, I decided to join <strong>Kannelle</strong> and the world of startups in
-                order to have more responsibilities and get better technically. I am in charge of
+                order to have more responsibilities and get better technically. I was in charge of
                 developing from scratch an administration platform enabling to configure the
                 experience within the mobile application, as well as a video editor. During the
                 mission, I was also given the responsibility for the back-end, DevOps and cloud
                 architecture.
+              </p>
+              <p>
+                In 2022, I took part in a great adventure by joining a french unicorn:{' '}
+                <strong>Swile</strong> 🦄. Working in the &quot;Places&quot; team as a full stack
+                engineer, I am in charge of developing many features related to the geolocation of
+                the restaurant and shops affiliated with Swile, enhancing the existing product,
+                contributing to the roadmap, etc.
               </p>
             </div>
           </div>

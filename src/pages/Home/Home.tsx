@@ -44,8 +44,8 @@ const Home = () => {
                 </h1>
                 <h3 className={classes.subtitle}>
                   Full stack web engineer at{' '}
-                  <a href="https://kannelle.io" className={classes.link}>
-                    Kannelle
+                  <a href="https://www.swile.co/" className={classes.link}>
+                    Swile
                   </a>
                   , specialized in React, Node.js and Spring technologies.
                 </h3>

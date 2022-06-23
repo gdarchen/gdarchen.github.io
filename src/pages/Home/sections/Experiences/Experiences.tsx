@@ -29,6 +29,7 @@ const Experiences = () => {
                   className={experience.className}
                   date={experience.date}
                   iconStyle={experience.iconStyle}
+                  iconClassName={experience.iconClassName}
                   icon={experience.icon}
                   key={experience.date}
                 >

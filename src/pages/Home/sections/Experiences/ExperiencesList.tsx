@@ -3,6 +3,7 @@ import {
   FaCalculator,
   FaCode,
   FaCodeBranch,
+  FaCreditCard,
   FaGraduationCap,
   FaPeopleCarry,
   FaVideo,
@@ -13,7 +14,8 @@ import { Md3DRotation } from 'react-icons/md';
 type Experience = {
   date: string;
   title: string;
-  iconStyle: React.CSSProperties;
+  iconStyle?: React.CSSProperties;
+  iconClassName?: string;
   icon: ReactNode;
   className?: string;
   location: string;
@@ -22,9 +24,27 @@ type Experience = {
 };
 
 export const experiences: Experience[] = [
+  // Swile
+  {
+    date: 'July 2022 - today',
+    title: 'Senior full stack web engineer',
+    iconClassName: 'vertical-timeline-element--work-swile-icon',
+    icon: <FaCreditCard />,
+    className: 'vertical-timeline-element--work-swile',
+    location: 'Swile, Montpellier & Paris (full remote), France',
+    description: (
+      <span>
+        I am working for this french unicorn 🦄, in the &quot;Places&quot; team which is in charge
+        of the full stack development of all the features related to the geolocation of the
+        restaurant and shops affiliated with Swile.
+      </span>
+    ),
+    technologies: ['React', 'Node.js', 'Git', 'Kubernetes'],
+  },
+
   // Kannelle
   {
-    date: 'May 2020 - today',
+    date: 'May 2020 - June 2022',
     title: 'Full stack web engineer',
     iconStyle: { background: 'rgb(0, 225, 131)', color: '#fff' },
     icon: <FaVideo />,
