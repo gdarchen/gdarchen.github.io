@@ -36,7 +36,7 @@ export const experiences: Experience[] = [
       <span>
         I am working for this french unicorn 🦄, in the &quot;Places&quot; team which is in charge
         of the full stack development of all the features related to the geolocation of the
-        restaurant and shops affiliated with Swile.
+        restaurants and shops affiliated with Swile.
       </span>
     ),
     technologies: ['React', 'Node.js', 'Git', 'Kubernetes'],

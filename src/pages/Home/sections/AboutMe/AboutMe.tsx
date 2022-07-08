@@ -61,7 +61,7 @@ const AboutMe = () => {
                 In 2022, I took part in a great adventure by joining a french unicorn:{' '}
                 <strong>Swile</strong> 🦄. Working in the &quot;Places&quot; team as a full stack
                 engineer, I am in charge of developing many features related to the geolocation of
-                the restaurant and shops affiliated with Swile, enhancing the existing product,
+                the restaurants and shops affiliated with Swile, enhancing the existing product,
                 contributing to the roadmap, etc.
               </p>
             </div>
