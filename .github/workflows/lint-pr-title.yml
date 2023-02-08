@@ -8,7 +8,7 @@ on:
       - synchronize
 
 ## Pattern to match strings as follows:
-# ✨ feature(ui): Add `Button` component.
+# ✨ feat(ui): add `Button` component
 # ^  ^    ^    ^
 # |  |    |    |__ Subject
 # |  |    |_______ Scope
@@ -40,6 +40,7 @@ jobs:
             revert
             style
             test
+            upgrade
             wip
 
       - uses: marocchino/sticky-pull-request-comment@v2
@@ -53,7 +54,7 @@ jobs:
 
             We require pull request titles to be formatted as follows:
             ```
-            ✨ feature(ui): Add `Button` component.
+            ✨ feat(ui): add `Button` component
             ^  ^    ^    ^
             |  |    |    |__ Subject
             |  |    |_______ Scope
