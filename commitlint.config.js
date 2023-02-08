@@ -20,6 +20,7 @@ module.exports = {
         'revert',
         'style',
         'test',
+        'upgrade',
         'wip',
       ],
     ],
