@@ -30,7 +30,7 @@
     "react-router-dom": "6",
     "react-router-hash-link": "^2.4.3",
     "react-slick": "^0.29.0",
-    "react-vertical-timeline-component": "^3.5.2",
+    "react-vertical-timeline-component": "^4.0.0",
     "remove": "^0.1.5",
     "sass": "^1.52.1",
     "tss-react": "^4.0.0",
