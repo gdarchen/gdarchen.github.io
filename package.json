@@ -26,7 +26,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-icons": "^4.4.0",
-    "react-player": "^2.10.1",
+    "react-player": "^3.0.0",
     "react-router-dom": "6",
     "react-router-hash-link": "^2.4.3",
     "react-slick": "^0.29.0",
